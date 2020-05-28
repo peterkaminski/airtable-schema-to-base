@@ -70,13 +70,19 @@ pip install -r requirements.txt
 
 ## Run Airtable Schema to Base
 
+Load your API key.
+
+```shell
+source env.sh
+```
+
 Run the `airtable-schema-to-base.py` script.
 
 ```shell
 ./airtable-schema-to-base.py -j appXXXXXXXXXXXXXX.json -i appXXXXXXXXXXXXXX -n Backline -d appYYYYYYYYYYYYYY
 ```
 
-The script will read the JSON file, and transfer the structure it has mapped to your "My Data Dictionary Base". It will take a few minutes, and there is no output. If you have your "My Data Dictionary Base", you will see data being populated into it.
+The script will read the JSON file, and create corresponding table and field records in your "My Data Dictionary Base". It will take a few minutes, and there is no output. If you have your "My Data Dictionary Base" open, you will see data being populated into it.
 
 After the script has finished, open the base.
 
