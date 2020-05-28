@@ -92,8 +92,9 @@ Go to the "Fields" table. Convert the "Table" field to a link to the "Tables" ta
 
 You may now rearrange your tables. For instance:
 
-* On the "Fields" table, hide the "Table" field, and group by "Table".
 * On the "Tables" table, hide the "Base" and "Fields" table, and group by "Base".
+* On the "Fields" table, hide the "Table" field, and group by "Table".
+* On the "Fields" table, convert the "Type" field to Single select.
 
 ## Feedback, Suggestions, Bugs
 
