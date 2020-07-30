@@ -20,23 +20,25 @@ Create a new, empty base to receive the schema data. For this document, let's ca
 
 Create the following tables and fields. Make the fields single-line text unless noted otherwise.
 
-* Bases
- * Name
- * Base ID
- * Base URL - URL
- * Description - Long text
- * Last Imported - Date
-* Tables
- * Name
- * Base
- * Description - Long text
- * Last Imported - Date
-* Fields
- * Name
- * Table
- * Type
- * Description - Long text
- * Last Imported - Date
+### Bases
+* Name
+* Base ID
+* Base URL - URL
+* Description - Long text
+* Last Imported - Date
+
+### Tables
+* Name
+* Base
+* Description - Long text
+* Last Imported - Date
+
+### Fields
+* Name
+* Table
+* Type
+* Description - Long text
+* Last Imported - Date
 
 ## Installation
 
@@ -79,7 +81,7 @@ source env.sh
 Run the `airtable-schema-to-base.py` script.
 
 ```shell
-./airtable-schema-to-base.py -j appXXXXXXXXXXXXXX.json -i appXXXXXXXXXXXXXX -n Backline -d appYYYYYYYYYYYYYY
+./airtable-schema-to-base.py -j appXXXXXXXXXXXXXX.json -i appXXXXXXXXXXXXXX -n 'My Base' -d appYYYYYYYYYYYYYY
 ```
 
 The script will read the JSON file, and create corresponding table and field records in your "My Data Dictionary Base". It will take a few minutes, and there is no output. If you have your "My Data Dictionary Base" open, you will see data being populated into it.
@@ -93,7 +95,7 @@ Go to the "Fields" table. Convert the "Table" field to a link to the "Tables" ta
 You may now rearrange your tables. For instance:
 
 * On the "Tables" table, hide the "Base" and "Fields" table, and group by "Base".
-* On the "Fields" table, hide the "Table" field, and group by "Table".
+* On the "Fields" table, hide the "Table" field, and group by "Base" and "Table".
 * On the "Fields" table, convert the "Type" field to Single select.
 
 ## Feedback, Suggestions, Bugs
